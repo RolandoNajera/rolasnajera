@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "title": "Rolas Najera Website Personal",
+  "description": "Sitio web personal de rolasnajera",
+  "type": "website",
+  "tags": ["finanzas personales", "educación financiera", "fintech", "Rolas Najera"],
+  "substackUrl": "https://rolasnajera.substack.com",
+  "social": {
+    "email": "info@rolasnajera.com",
+    "instagram": "https://instagram.com/rolasnajera",
+    "substack": "https://rolasnajera.substack.com",
+    "linkedin": "https://www.linkedin.com/in/rolasnajera/"
+  },
+  "seo": {
+    "title": "Rolas Najera – Educación financiera realista, para personas reales",
+    "description": "Aprende a tomar el control de tu dinero y liberarte de deudas. Construye una libertad financiera alcanzable, sin fórmulas mágicas ni promesas vacías.",
+    "keywords": [
+      "educación financiera realista",
+      "finanzas personales para profesionales",
+      "inversión para principiantes",
+      "libertad financiera sin fórmulas mágicas",
+      "consejos financieros prácticos",
+      "tecnología financiera (fintech)"
+    ]
+  }
+}
+
