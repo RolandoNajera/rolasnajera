@@ -2,6 +2,7 @@
 import site from "../site.config.json";
 // Import global styles so Astro bundles them correctly
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
 const { seo } = site;
 const { title = "", description = "" } = seo || {};
 interface Props {
@@ -29,12 +30,24 @@ const pageDescription = Astro.props.description ?? description;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDescription} />
+    <script>
+      try {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) { /* no-op */ }
+    </script>
   </head>
   <body class="font-sans">
-    <main class="container-base">
+    <Navbar />
+    <main class="container-base pt-24">
       <slot />
     </main>
-    <footer class="container-base py-12 text-sm text-gray-500">
+    <footer class="container-base py-12 text-sm text-gray-500 dark:text-gray-400">
       © {new Date().getFullYear()} Rolas Najera. Todos los derechos reservados.
     </footer>
   </body>
