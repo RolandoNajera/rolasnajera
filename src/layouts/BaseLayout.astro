@@ -3,6 +3,7 @@ import site from "../site.config.json";
 // Import global styles so Astro bundles them correctly
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 const { seo } = site;
 const { title = "", description = "" } = seo || {};
 interface Props {
@@ -47,8 +48,6 @@ const pageDescription = Astro.props.description ?? description;
     <main class="container-base pt-24">
       <slot />
     </main>
-    <footer class="container-base py-12 text-sm text-gray-500 dark:text-gray-400">
-      © {new Date().getFullYear()} Rolas Najera. Todos los derechos reservados.
-    </footer>
+    <Footer />
   </body>
 </html>
