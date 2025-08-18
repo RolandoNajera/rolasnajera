@@ -115,7 +115,7 @@ const social = site.social || {};
 
   const toggleTheme = () => {
     const isDark = root.classList.toggle('dark');
-    try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+    try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) { /* ignore persist errors */ }
   };
   toggleBtns.forEach(btn => btn?.addEventListener('click', toggleTheme));
 </script>
