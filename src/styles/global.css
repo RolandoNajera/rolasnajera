@@ -14,6 +14,10 @@ body {
   @apply bg-white text-gray-900 antialiased;
 }
 
+.dark body, body.dark {
+  @apply bg-gray-950 text-gray-100;
+}
+
 /* Mobile-first centered container with side gutters */
 .container-base {
   @apply w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
