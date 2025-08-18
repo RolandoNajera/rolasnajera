@@ -2,13 +2,15 @@
 import site from "../site.config.json";
 const substackUrl = site.substackUrl || "https://rolasnajera.substack.com";
 ---
-<section class="container-base py-16 border-t border-gray-100">
-  <h2 class="text-2xl font-semibold">Suscríbete y empieza tu camino hacia la libertad financiera</h2>
-  <p class="mt-2 text-gray-700">
-    Recibe cada semana consejos prácticos de finanzas, inversión y tecnología financiera directamente en tu bandeja de entrada.
-  </p>
-  <div class="mt-6">
-    <iframe src={`${substackUrl}/embed`} class="w-full max-w-xl h-40 border rounded-md" title="Substack Newsletter" loading="lazy"></iframe>
+<section class="py-16 border-t border-gray-100">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold">Suscríbete y empieza tu camino hacia la libertad financiera</h2>
+    <p class="mt-2 text-gray-700">
+      Recibe cada semana consejos prácticos de finanzas, inversión y tecnología financiera directamente en tu bandeja de entrada.
+    </p>
+    <div class="mt-6">
+      <iframe src={`${substackUrl}/embed`} class="w-full max-w-xl mx-auto h-40 border rounded-md" title="Substack Newsletter" loading="lazy"></iframe>
+    </div>
   </div>
 </section>
 
