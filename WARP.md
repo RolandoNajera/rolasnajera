@@ -54,3 +54,12 @@ Operational tips
 - When adding new pages or components, ensure Tailwind content globs in tailwind.config.js include the file types/paths (they already include src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}).
 - If introducing tests in the future, add scripts to package.json (e.g., "test", "test:watch") and document how to run a single test.
 
+Branding rules
+- Use the following brand colors across the site where appropriate:
+  - Primary (dark): #264653
+  - Primary (teal): #2a9d8f
+  - Accent: #f4a261
+  - Ink (text): #333333
+  - Paper (background): #f6f5f3
+- Tailwind palette is configured under theme.extend.colors.brand with named keys (dark, teal, accent, ink, paper) and numeric aliases for compatibility (400, 500, 600, 700). Use these utilities (e.g., bg-brand-600, hover:bg-brand-700, text-brand-ink, bg-brand-paper) to keep styling consistent.
+

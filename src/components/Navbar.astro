@@ -19,18 +19,18 @@ const social = site.social || {};
         <span class="sr-only">Rolas Najera</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="https://substack.com/@rolasnajera" target="_blank" class="nav-link">Blog</a>
         <div class="ml-2 flex items-center gap-3">
           <a href={social.instagram} target="_blank" rel="noopener" aria-label="Instagram" class="hover:opacity-80">
-            <Icon name="mdi:instagram" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+            <Icon name="mdi:instagram" class="h-5 w-5 text-brand-ink dark:text-gray-200" />
           </a>
           <a href={social.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:opacity-80">
-            <Icon name="mdi:linkedin" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+            <Icon name="mdi:linkedin" class="h-5 w-5 text-brand-ink dark:text-gray-200" />
           </a>
-          <button id="theme-toggle" class="ml-2 rounded p-1.5 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Cambiar tema">
+          <button id="theme-toggle" class="ml-2 rounded p-1.5 hover:bg-brand-paper dark:hover:bg-gray-800" aria-label="Cambiar tema">
             <Icon name="tabler:sun" class="h-5 w-5 hidden dark:inline text-amber-300" />
-            <Icon name="tabler:moon" class="h-5 w-5 dark:hidden text-gray-700" />
+            <Icon name="tabler:moon" class="h-5 w-5 dark:hidden text-brand-ink" />
           </button>
         </div>
       </nav>
@@ -43,27 +43,27 @@ const social = site.social || {};
 
   <!-- Mobile Drawer -->
   <div id="mobile-overlay" class="fixed inset-0 z-40 hidden bg-black/30"></div>
-  <aside id="mobile-drawer" class="fixed left-0 top-0 z-50 h-full w-72 -translate-x-full transform bg-white dark:bg-gray-900 shadow-xl transition-transform duration-300">
+  <aside id="mobile-drawer" class="fixed left-0 top-0 z-50 h-full w-72 -translate-x-full transform bg-brand-paper dark:bg-gray-900 shadow-xl transition-transform duration-300">
     <div class="flex h-20 items-center justify-between px-4">
       <a href="/" class="flex items-center gap-3" aria-label="Ir al inicio" on:click="closeMenu()">
         <img src="/images/RolasFinanzas_1.png" alt="Rolas Najera logo" width="120" height="36" class="h-8 w-auto" loading="eager" decoding="async" />
       </a>
-      <button id="menu-close" class="rounded p-2 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Cerrar menú">
+      <button id="menu-close" class="rounded p-2 hover:bg-brand-paper dark:hover:bg-gray-800" aria-label="Cerrar menú">
         <Icon name="tabler:x" class="h-6 w-6" />
       </button>
     </div>
     <nav class="px-4 pb-8">
-      <a href="https://substack.com/@rolasnajera" target="_blank" class="block rounded px-3 py-2 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800" on:click="closeMenu()">Blog</a>
+      <a href="https://substack.com/@rolasnajera" target="_blank" class="block rounded px-3 py-2 text-base font-medium hover:bg-brand-paper dark:hover:bg-gray-800" on:click="closeMenu()">Blog</a>
       <div class="mt-4 flex items-center gap-4 px-1">
-        <a href={social.instagram} target="_blank" rel="noopener" aria-label="Instagram" class="rounded p-2 hover:bg-gray-100 dark:hover:bg-gray-800">
-          <Icon name="mdi:instagram" class="h-5 w-5" />
+        <a href={social.instagram} target="_blank" rel="noopener" aria-label="Instagram" class="rounded p-2 hover:bg-brand-paper dark:hover:bg-gray-800">
+          <Icon name="mdi:instagram" class="h-5 w-5 text-brand-ink dark:text-gray-200" />
         </a>
-        <a href={social.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn" class="rounded p-2 hover:bg-gray-100 dark:hover:bg-gray-800">
-          <Icon name="mdi:linkedin" class="h-5 w-5" />
+        <a href={social.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn" class="rounded p-2 hover:bg-brand-paper dark:hover:bg-gray-800">
+          <Icon name="mdi:linkedin" class="h-5 w-5 text-brand-ink dark:text-gray-200" />
         </a>
-        <button id="theme-toggle-mobile" class="ml-auto rounded p-2 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Cambiar tema">
+        <button id="theme-toggle-mobile" class="ml-auto rounded p-2 hover:bg-brand-paper dark:hover:bg-gray-800" aria-label="Cambiar tema">
           <Icon name="tabler:sun" class="h-5 w-5 hidden dark:inline text-amber-300" />
-          <Icon name="tabler:moon" class="h-5 w-5 dark:hidden" />
+          <Icon name="tabler:moon" class="h-5 w-5 dark:hidden text-brand-ink" />
         </button>
       </div>
     </nav>
@@ -71,14 +71,14 @@ const social = site.social || {};
 </header>
 
 <style>
-  .nav-link { @apply text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white; }
+  .nav-link { @apply text-brand-ink hover:text-brand-dark dark:text-gray-200 dark:hover:text-white; }
   #navbar {
     /* Start transparent over hero */
     background-color: transparent;
   }
   .navbar-solid {
     /* Solid after scrolling */
-    @apply bg-white/90 dark:bg-gray-950/80 backdrop-blur border-b border-gray-200/70 dark:border-gray-800;
+    @apply bg-brand-paper/90 dark:bg-gray-950/80 backdrop-blur border-b border-brand-ink/20 dark:border-gray-800;
   }
 </style>
 
