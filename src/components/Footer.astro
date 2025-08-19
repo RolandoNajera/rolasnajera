@@ -11,10 +11,10 @@ const links: { href: string; label: string; icon: string }[] = [
   social.substack && { href: social.substack, label: "Substack", icon: "tabler:rss" },
 ].filter(Boolean) as any;
 ---
-<footer class="border-t border-gray-200 dark:border-gray-800 mt-16">
+<footer class="border-t border-brand-ink/20 dark:border-gray-800 mt-16">
   <div class="container-base py-12 flex flex-col gap-8">
     <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-      <div class="text-sm text-gray-600 dark:text-gray-400">
+      <div class="text-sm text-brand-ink/70 dark:text-gray-400">
         © {year} Rolas Najera. Todos los derechos reservados.
       </div>
       <nav class="flex items-center gap-3">
@@ -24,7 +24,7 @@ const links: { href: string; label: string; icon: string }[] = [
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.label}
-            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 transition"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-brand-ink/20 dark:border-gray-800 text-brand-ink dark:text-gray-300 hover:bg-brand-paper dark:hover:bg-gray-900 transition"
           >
             <Icon name={item.icon} class="h-5 w-5" />
           </a>
@@ -38,7 +38,7 @@ const links: { href: string; label: string; icon: string }[] = [
           href={blogUrl}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-sm font-medium text-gray-900 dark:text-gray-100 underline underline-offset-4 hover:text-gray-700 dark:hover:text-gray-300"
+          class="text-sm font-medium text-brand-ink dark:text-gray-100 underline underline-offset-4 hover:text-brand-dark dark:hover:text-gray-300"
         >
           Leer el blog →
         </a>

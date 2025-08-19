@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  @apply bg-white text-gray-900 antialiased;
+  @apply bg-brand-paper text-brand-ink antialiased;
 }
 
 .dark body, body.dark {
